@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>スコア報告</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>スコア報告</h1>
+
+  <form id="scoreForm">
+    <label>ユーザー名: <input type="text" id="username" required /></label><br />
+    <label>パスワード: <input type="password" id="password" required /></label><br />
+
+    <h2>チップ枚数</h2>
+    <label>黒 (100点): <input type="number" id="black" value="0" min="0" /></label><br />
+    <label>緑 (25点): <input type="number" id="green" value="0" min="0" /></label><br />
+    <label>赤 (5点): <input type="number" id="red" value="0" min="0" /></label><br />
+    <label>白 (1点): <input type="number" id="white" value="0" min="0" /></label><br />
+    <label>復活 (-200点): <input type="number" id="revive" value="0" min="0" /></label><br />
+
+    <button type="submit">保存</button>
+  </form>
+
+  <div id="message"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
